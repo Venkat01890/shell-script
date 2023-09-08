@@ -7,7 +7,7 @@ SUBJECT=$2
 BODY=$(sed -e 's/[]\/$*.^[]/\\&/g' <<< $3)
 echo "escaped content: $BODY"
 TEAM_NAME=$4
-ALERT_NAME=$5
+ALERT_TYPE=$5
 
 #echo "all args: $@"
 
